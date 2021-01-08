@@ -1,0 +1,115 @@
+*{
+    font-family: 'Red Hat Text', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;   
+}
+.content_conteiner{
+    background-image: url(images/bg-stars.svg);
+}
+.conteiner{
+    width: 100%;
+    background: linear-gradient(360deg, rgba(47,36,57,0.9626050249201243) 20%, rgba(25,26,35,1) 75%);
+    height: 100vh;
+}
+.timer{
+    text-align: center;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+.time{
+    background: linear-gradient(360deg, hsl(236, 21%, 26%) 50%,  hsl(236, 22%, 22%) 50%);
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: .2em;
+    box-sizing: border-box;
+    padding-top: 20%;
+    font-size:4rem;;
+    color: hsl(345, 95%, 68%);
+    text-align: center;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    margin-bottom: .1em;
+    
+}
+.title{
+    width: 35%;
+    height: 20vh;
+    margin: 0 auto;
+    padding-top:16vh;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+.content{
+    width: 55%;
+    margin: 0 auto;  
+    color: hsl(237, 18%, 59%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.social_media{
+    background-image: url(images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6.3% 0;
+    margin-top: 12%;
+}
+.icon{
+    width: 20vw;
+    margin: 0 auto;
+}
+.icon i{
+    margin-left: 2em;
+}
+.attribution { font-size: 11px; text-align: center; color: #000;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 460px) {
+    .time{
+        width: 2em;
+        height: 2em;
+        font-size: 2rem;       
+    }
+    .content{
+        width: 10%;
+        margin: 0 16%;
+    }
+    .timer{
+        font-size: .6em;
+        margin-right: .2em;
+    }
+    .title{
+        width: 20%;
+        margin: 0 20%;
+    }
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: 60%;
+    }
+    .attribution{color:#fff;}
+  }
+  @media screen and (min-width:461px) and (max-width: 1180px){
+    .icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin:auto;
+    }
+    .time{
+        width: 2em;
+    height: 2em;
+    }
+    .content{
+        padding-top: 5%;
+    }
+    .timer{
+        margin: 0 .2em;
+    }
+    .attribution{color:#fff;}
+  }
+  
